@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(RN-Praxis)
+project(ZMQ-MapReduce)
 set(CMAKE_C_STANDARD 11)
 
 find_library(ZeroMQ zmq REQUIRED)
