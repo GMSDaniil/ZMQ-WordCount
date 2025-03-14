@@ -21,12 +21,6 @@ This project implements a distributed word count system using a MapReduce-like a
    - Processes map and reduce operations and returns the results.
    - Exits when a "rip" message is received.
 
-Dependencies
-------------
-- ZeroMQ library
-- POSIX Threads
-- C compiler (e.g., gcc)
-
 Compilation
 -----------
 Compile the distributor and worker programs using gcc. For example:
