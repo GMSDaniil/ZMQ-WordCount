@@ -23,8 +23,8 @@ This project implements a distributed word count system using a MapReduce-like a
 
 Dependencies
 ------------
-- ZeroMQ library (libzmq)
-- POSIX Threads (pthread)
+- ZeroMQ library
+- POSIX Threads
 - C compiler (e.g., gcc)
 
 Compilation
