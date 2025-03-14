@@ -36,14 +36,13 @@ Compile the distributor and worker programs using gcc. For example:
 
 Usage
 -----
-1. Start one or more worker processes, specifying the ports on which they should listen. For example, to start a worker on ports 5555 and 5556:
+1. Start one or more worker processes, specifying the ports on which they should listen. For example, to start a workers on ports 5555 and 5556(1 port per worker):
    ```
-    ./build/zmq_worker 5555 5556
-
-2. Run the distributor, providing the input file and the worker ports:
+    ./build/zmq_worker 5555
+    ./build/zmq_worker 5556
+2. Run the distributor, providing the input file and the workers` ports:
    ```
     ./build/zmq_distributor input.txt 5555 5556
-
 The distributor will process the input file, distribute the workload among the workers, and finally output the word counts in CSV format.
 
 Notes
