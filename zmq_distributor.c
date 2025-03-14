@@ -468,7 +468,7 @@ int main(int argc, char *argv[])
 
     // KILL THEM ALLL
     for (int i = 0; i < num_workers; i++) {
-        fprintf(stderr, "Sending rip");
+        fprintf(stderr, "Sending rip\n");
         void *s = zmq_socket(g_zmq_context, ZMQ_REQ);
         if (!s) {
             perror("zmq_socket rip");
@@ -530,7 +530,7 @@ int main(int argc, char *argv[])
 
     // Sort the array by frequency (descending) and then alphabetically.
     qsort(arr, count_final, sizeof(FinalPair*), cmpfunc);
-    fprintf(stderr, "Output of %d words", count_final);
+    fprintf(stderr, "Output of %d words\n", count_final);
 
     // Print the results in CSV format.
     printf("word,frequency\n");
@@ -538,7 +538,7 @@ int main(int argc, char *argv[])
         printf("%s,%d\n", arr[i]->word, arr[i]->count);
 
     }
-    fprintf(stderr, "Printed csv");
+    fprintf(stderr, "Printed csv\n");
     free(arr);
 
     // Free memory allocated for endpoints.
