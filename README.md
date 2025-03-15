@@ -23,7 +23,7 @@ This project implements a distributed word count system using a MapReduce-like a
 
 Compilation
 -----------
-Compile the distributor and worker programs using gcc. For example:
+Compile the distributor and worker programs using gcc. You need to have ZeroMQ libraries installed. For example:
 
     cmake -B build -DCMAKE_BUILD_TYPE=Debug
     make -C build
